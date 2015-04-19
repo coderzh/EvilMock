@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="sut">
+      <UniqueIdentifier>{356cbf7f-76c6-45f0-b722-8dbbcc037960}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{9cd03247-03c6-4797-af92-cb792bb33ba9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests">
+      <UniqueIdentifier>{faa6919d-6eea-4667-9a7d-2e543747ded7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sut\demo.h">
+      <Filter>sut</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\hookmock.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\hook.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="tests\globalmethod_test.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="test_main.cpp" />
+  </ItemGroup>
+</Project>
